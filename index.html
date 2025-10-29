@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Med Vonjoson - Full Stack Developer</title>
+    <meta name="description" content="Med Vonjoson - Full Stack Developer creating responsive and functional websites and software">
+    <meta name="keywords" content="web developer, full stack developer, portfolio, web design">
+    <meta name="author" content="Med Vonjoson">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Magnific Popup CSS -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- MENU LOADING OVERLAY -->
+    <div id="menuLoadingOverlay" class="menu-loading-overlay">
+        <div class="menu-loading-spinner"></div>
+        <div class="menu-loading-text" id="loadingText">Loading...</div>
+        <div class="menu-loading-progress">
+            <div class="menu-loading-bar" id="loadingBar"></div>
+        </div>
+        <div class="menu-loading-percentage" id="loadingPercentage">0%</div>
+    </div>
+
+    <!-- HEADER WITH NAVIGATION -->
+    <header style="background: white; padding: 15px 0; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- LEFT: Profile Picture + Name -->
+                <div class="d-flex align-items-center gap-3">
+                    <img src="images/happy-bearded-young-man.jpg" alt="Med Vonjoson" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #e0e0e0;">
+                    <h4 class="mb-0" style="color: var(--dark-color); font-weight: bold;">Med Vonjoson</h4>
+                </div>
+                
+                <!-- CENTER: Navigation Links -->
+                <nav class="d-none d-md-flex gap-4">
+                    <a href="#section_1" class="custom-link click-scroll text-decoration-none fw-bold" style="font-size: 14px; transition: all 0.3s; color: var(--dark-color);">HOME</a>
+                    <a href="#section_2" class="custom-link click-scroll text-decoration-none fw-bold" style="font-size: 14px; transition: all 0.3s; color: var(--dark-color);">ABOUT</a>
+                    <a href="cv-resume.html" class="custom-link text-decoration-none fw-bold" style="font-size: 14px; transition: all 0.3s; color: var(--secondary-color); border-bottom: 2px solid var(--secondary-color);">RESUME</a>
+                    <a href="#section_3" class="custom-link click-scroll text-decoration-none fw-bold" style="font-size: 14px; transition: all 0.3s; color: var(--dark-color);">SERVICES</a>
+                    <a href="#section_4" class="custom-link click-scroll text-decoration-none fw-bold" style="font-size: 14px; transition: all 0.3s; color: var(--dark-color);">PROJECTS</a>
+                    <a href="#section_5" class="custom-link click-scroll text-decoration-none fw-bold" style="font-size: 14px; transition: all 0.3s; color: var(--dark-color);">CONTACT</a>
+                </nav>
+                
+                <!-- RIGHT: Phone Button -->
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone" style="font-size: 18px; color: var(--dark-color);"></i>
+                    <button class="btn fw-bold" style="background: white; color: black; border: 2px solid #000; border-radius: 25px; padding: 8px 20px; font-size: 14px;">
+                        +23278091467
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- RED BACKGROUND SECTION -->
+    <div style="background: var(--primary-color); margin-top: 80px; min-height: 80px; position: relative; overflow: hidden;">
+        <!-- Wavy bottom edge -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" style="width: 100%; height: 100px; position: absolute; bottom: 0; left: 0;">
+            <path fill="#f8f9fa" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,37.3C960,32,1056,32,1152,34.7C1248,37,1344,43,1392,45.3L1440,48L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+        </svg>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="section_1" class="hero section-padding" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); position: relative; overflow: hidden; padding-top: 120px;">
+        <!-- Animated Background Elements -->
+        <div class="hero-animated-bg" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; z-index: 1;">
+            <div class="flow-particle" style="background: radial-gradient(circle, rgba(22, 163, 74, 0.25) 0%, transparent 70%);"></div>
+            <div class="flow-particle" style="background: radial-gradient(circle, rgba(22, 163, 74, 0.3) 0%, transparent 70%);"></div>
+            <div class="flow-particle" style="background: radial-gradient(circle, rgba(22, 163, 74, 0.2) 0%, transparent 70%);"></div>
+            <div class="flow-particle" style="background: radial-gradient(circle, rgba(220, 38, 38, 0.15) 0%, transparent 70%);"></div>
+            <div class="flow-particle" style="background: radial-gradient(circle, rgba(22, 163, 74, 0.22) 0%, transparent 70%);"></div>
+        </div>
+
+        <div class="container" style="position: relative; z-index: 10;">
+            <div class="row align-items-center">
+                <!-- LEFT SIDE: Text Content -->
+                <div class="col-lg-6 col-md-12 mb-5 mb-lg-0">
+                    <h1 style="font-size: 56px; font-weight: 800; line-height: 1.2; margin-bottom: 30px; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.2);">
+                        Full-Stack Developer Creating Responsive and Functional Websites and Software.
+                    </h1>
+                    <p style="font-size: 18px; line-height: 1.8; color: white; margin-bottom: 40px; text-shadow: 1px 1px 4px rgba(0,0,0,0.2);">
+                        Dedicated to crafting impactful online strategies and solutions to help businesses grow and succeed in the digital landscape.
+                    </p>
+                    
+                    <!-- Call-to-Action Buttons -->
+                    <div class="d-flex flex-column flex-md-row gap-3 mb-4">
+                        <a href="#section_5" class="custom-btn custom-link text-center" style="background: var(--primary-color); color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-block;">
+                            Let's begin
+                        </a>
+                        <a href="cv-resume.html" onclick="window.open('cv-resume.html', '_blank'); return false;" class="custom-btn custom-link text-center" style="background: var(--primary-color); color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                            <i class="bi bi-printer" style="font-size: 20px;"></i>
+                            Print Portfolio
+                        </a>
+                        <a href="cv-resume.html" class="custom-btn custom-link text-center" style="background: var(--secondary-color); color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+                            <i class="bi bi-file-earmark-person" style="font-size: 20px;"></i>
+                            View Resume
+                        </a>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon-link" style="width: 45px; height: 45px; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark-color); background: white; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <i class="bi bi-whatsapp" style="font-size: 20px;"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" style="width: 45px; height: 45px; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark-color); background: white; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <i class="bi bi-facebook" style="font-size: 20px;"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" style="width: 45px; height: 45px; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark-color); background: white; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <i class="bi bi-instagram" style="font-size: 20px;"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" style="width: 45px; height: 45px; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--dark-color); background: white; text-decoration: none; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <i class="bi bi-linkedin" style="font-size: 20px;"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- RIGHT SIDE: Profile Image -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-center" style="position: relative; z-index: 8;">
+                        <img src="images/WhatsApp Image 2025-09-22 at 11.11.14_b7346d2c.jpg" alt="Med Vonjoson" style="width: 100%; max-width: 500px; height: auto; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); position: relative;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Wave SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" style="width: 100%; display: block; margin-top: -1px; position: relative; z-index: 5;">
+            <path fill="#ffffff" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,150L1392,150C1344,150,1248,150,1152,150C1056,150,960,150,864,150C768,150,672,150,576,150C480,150,384,150,288,150C192,150,96,150,48,150L0,150Z"></path>
+        </svg>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="section_2" class="about section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">About Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="display: inline-block; width: 4px; height: 30px; background: var(--primary-color);"></span>
+                        Programs
+                    </h3>
+                    
+                    <div class="achievement-item mb-4">
+                        <h5 style="color: var(--primary-color); margin-bottom: 15px;">
+                            Various Online Platforms
+                        </h5>
+                        <p style="color: var(--p-color); margin-bottom: 15px;">
+                            Completed comprehensive online courses in Front-End Development, Back-End Development, Artificial Intelligence.
+                        </p>
+                        <div class="certificate-container">
+                            <a href="images/Certificate File" class="certificate-link popup-image" title="Johns Hopkins University Certificate">
+                                <img src="images/portrait-happy-excited-man-holding-laptop-computer.png" alt="Certificate" class="certificate-image">
+                                <p class="certificate-caption mt-2">
+                                    <i class="bi bi-search me-2"></i>Click to view certificate
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 style="color: var(--secondary-color);">Certificate in Computer Software Application</h5>
+                            <span style="background: var(--primary-color); color: white; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: bold;">2023</span>
+                        </div>
+                        <p style="color: var(--p-color);">Africa Information Technology Holding Ltd.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="display: inline-block; width: 4px; height: 30px; background: var(--primary-color);"></span>
+                        Management
+                    </h3>
+                    
+                    <div class="achievement-item mb-4">
+                        <h5 style="color: var(--primary-color); margin-bottom: 15px;">
+                            Final Year Project
+                        </h5>
+                        <p style="color: var(--p-color);">
+                            Developed a project system for final year Students who are given the task to build a system that will solve real world problems in the tech ecosystem.
+                        </p>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 style="color: var(--secondary-color);">Dissertation Writing</h5>
+                            <span style="background: var(--primary-color); color: white; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: bold;">2024 - 2025</span>
+                        </div>
+                        <p style="color: var(--p-color);">
+                            Writing dissertation for final year projects in University of Sierra Leone and other universities in Sierra Leone to help them with their academic writing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="section_skills" class="featured section-padding" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);">
+        <div class="container">
+            <!-- Header Banner -->
+            <div class="row mb-5" style="background: var(--primary-color); padding: 40px; border-radius: 15px; margin: 0; position: relative; overflow: hidden;">
+                <div class="col-md-4 text-center">
+                    <img src="images/happy-bearded-young-man.jpg" alt="Med Vonjoson" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                    <h2 style="color: white; font-size: 48px; font-weight: bold; margin: 0;">My Skills</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Frontend Development Card -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="skill-progress-category">
+                        <h5 style="color: var(--primary-color); margin-bottom: 30px; display: flex; align-items: center; gap: 10px;">
+                            <i class="bi bi-lightning-charge-fill" style="color: #f59e0b;"></i>
+                            Frontend Development
+                        </h5>
+                        <div class="skill-progress-item">
+                            <div class="skill-label">
+                                <span>HTML5</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-label">
+                                <span>CSS3</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-label">
+                                <span>JavaScript</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-label">
+                                <span>React.js</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development Card -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="skill-progress-category">
+                        <h5 style="color: var(--primary-color); margin-bottom: 30px; display: flex; align-items: center; gap: 10px;">
+                            <i class="bi bi-lightning-charge-fill" style="color: #f59e0b;"></i>
+                            Backend Development
+                        </h5>
+                        <div class="skill-progress-item">
+                            <div class="skill-label">
+                                <span>PHP</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-label">
+                                <span>Node.js</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-bar" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-label">
+                                <span>Python</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-bar" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-label">
+                                <span>Database Management</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="section_3" class="services section-padding" style="background: var(--section-bg-color);">
+        <div class="container">
+            <!-- Services Header Banner -->
+            <div class="row mb-5" style="background: var(--primary-color); padding: 60px 40px; border-radius: 15px; position: relative; overflow: hidden;">
+                <div class="col-md-9 d-flex align-items-center">
+                    <h2 style="color: white; font-size: 72px; font-weight: bold; margin: 0;">SERVICES</h2>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-end">
+                    <img src="images/couple-working-from-home-together-sofa.jpg" alt="Services" style="max-width: 200px; height: auto; border-radius: 10px; opacity: 0.8;">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mb-5">
+                    <div class="services-thumb services-thumb-up" data-bs-toggle="modal" data-bs-target="#serviceModal1" style="cursor: pointer; background:#ffffff; border: 3px solid var(--secondary-color); border-radius: 18px; padding: 32px; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                            <h3 style="color: var(--secondary-color); font-size: 32px; font-weight: 800; margin: 0; line-height: 1.2;">Web<br>Development</h3>
+                            <span style="background: var(--primary-color); color: #fff; padding: 6px 16px; border-radius: 999px; font-weight: 700;">2,500</span>
+                        </div>
+                        <div style="height: 2px; background: #eef1f4; margin: 16px 0 20px 0;"></div>
+                        <p style="color: var(--p-color); margin-bottom: 22px;">
+                            Want to explore more about web development and software development and other digital solutions and get a custom website for your business.
+                        </p>
+                        <a class="btn" style="background:#f3f4f6; color:#111827; border-radius:28px; padding:10px 18px; font-weight:600;">Discover More</a>
+                        <div class="services-icon-wrap"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-12 mb-5">
+                    <div class="services-thumb services-thumb-up" data-bs-toggle="modal" data-bs-target="#serviceModal2" style="cursor: pointer; background:#ffffff; border: 3px solid var(--secondary-color); border-radius: 18px; padding: 32px; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                            <h3 style="color: var(--secondary-color); font-size: 32px; font-weight: 800; margin: 0; line-height: 1.2;">App<br>Development</h3>
+                            <span style="background: var(--primary-color); color: #fff; padding: 6px 16px; border-radius: 999px; font-weight: 700;">5,000</span>
+                        </div>
+                        <div style="height: 2px; background: #eef1f4; margin: 16px 0 20px 0;"></div>
+                        <p style="color: var(--p-color); margin-bottom: 22px;">
+                            You can explore more about app development and software development and other digital solutions and get a custom app for your business.
+                        </p>
+                        <a class="btn" style="background:#f3f4f6; color:#111827; border-radius:28px; padding:10px 18px; font-weight:600;">Discover More</a>
+                        <div class="services-icon-wrap"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-12 mb-5">
+                    <div class="services-thumb services-thumb-up" data-bs-toggle="modal" data-bs-target="#serviceModal3" style="cursor: pointer; background:#ffffff; border: 3px solid var(--secondary-color); border-radius: 18px; padding: 32px; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                            <h3 style="color: var(--secondary-color); font-size: 32px; font-weight: 800; margin: 0; line-height: 1.2;">Dissertation<br>Writing</h3>
+                            <span style="background: var(--primary-color); color: #fff; padding: 6px 16px; border-radius: 999px; font-weight: 700;">2,500</span>
+                        </div>
+                        <div style="height: 2px; background: #eef1f4; margin: 16px 0 20px 0;"></div>
+                        <p style="color: var(--p-color); margin-bottom: 22px;">
+                            If you need a custom dissertation for your business or academic research, we can help you with that.
+                        </p>
+                        <a class="btn" style="background:#f3f4f6; color:#111827; border-radius:28px; padding:10px 18px; font-weight:600;">Discover More</a>
+                        <div class="services-icon-wrap"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-12 mb-5">
+                    <div class="services-thumb services-thumb-up" data-bs-toggle="modal" data-bs-target="#serviceModal4" style="cursor: pointer; background:#ffffff; border: 3px solid var(--secondary-color); border-radius: 18px; padding: 32px; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                            <h3 style="color: var(--secondary-color); font-size: 32px; font-weight: 800; margin: 0; line-height: 1.2;">Data<br>Analysis</h3>
+                            <span style="background: var(--primary-color); color: #fff; padding: 6px 16px; border-radius: 999px; font-weight: 700;">3,000</span>
+                        </div>
+                        <div style="height: 2px; background: #eef1f4; margin: 16px 0 20px 0;"></div>
+                        <p style="color: var(--p-color); margin-bottom: 22px;">
+                            If you need a custom data analysis for your business or academic research, we can help you with that.
+                        </p>
+                        <a class="btn" style="background:#f3f4f6; color:#111827; border-radius:28px; padding:10px 18px; font-weight:600;">Discover More</a>
+                        <div class="services-icon-wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section id="section_achievements" class="resume section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h2 style="font-size: 48px; font-weight: bold; color: var(--primary-color); margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+                        <i class="bi bi-trophy-fill" style="font-size: 56px;"></i>
+                        Certifications & Achievements
+                    </h2>
+                    <div style="height: 3px; background: var(--primary-color); width: 100%;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="achievement-item">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bi bi-trophy-fill" style="color: #ffd700; font-size: 24px;"></i>
+                            <h5 style="color: var(--secondary-color); font-size: 24px; font-weight: bold; margin: 0;">Google Certified Web Developer</h5>
+                        </div>
+                        <p style="color: var(--p-color); margin-bottom: 20px;">
+                            Certified by Google in modern web development technologies including HTML5, CSS3, JavaScript ES6+, React.js, and responsive design principles. Specialized in Progressive Web Apps (PWA) development.
+                        </p>
+                        <div class="certificate-container">
+                            <a href="images/portrait-happy-excited-man-holding-laptop-computer.png" class="certificate-link popup-image" title="Google Certified Web Developer Certificate">
+                                <img src="images/portrait-happy-excited-man-holding-laptop-computer.png" alt="Certificate" class="certificate-image">
+                                <p class="certificate-caption mt-2">
+                                    <i class="bi bi-search me-2"></i>Click to view certificate
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="achievement-item">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bi bi-trophy-fill" style="color: #ffd700; font-size: 24px;"></i>
+                            <h5 style="color: var(--secondary-color); font-size: 24px; font-weight: bold; margin: 0;">Google AI Certificate</h5>
+                        </div>
+                        <p style="color: var(--p-color); margin-bottom: 20px;">
+                            Google certified in Artificial Intelligence fundamentals, Machine Learning, and Azure AI services. Expert in implementing AI solutions, chatbot development, and intelligent automation systems.
+                        </p>
+                        <div class="certificate-container">
+                            <a href="images/portrait-happy-excited-man-holding-laptop-computer.png" class="certificate-link popup-image" title="Google AI Certificate">
+                                <img src="images/portrait-happy-excited-man-holding-laptop-computer.png" alt="Certificate" class="certificate-image">
+                                <p class="certificate-caption mt-2">
+                                    <i class="bi bi-search me-2"></i>Click to view certificate
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="certificate-thumbs">
+                        <a href="images/Certificate File/WhatsApp Image 2025-10-16 at 16.53.38_9fcb424f.jpg.jpg" class="popup-image" title="Certificate">
+                            <img src="images/Certificate File/WhatsApp Image 2025-10-16 at 16.53.38_9fcb424f.jpg.jpg" alt="Certificate 1" class="certificate-thumb">
+                        </a>
+                        <a href="images/Certificate File/Screenshot 2025-10-01 051536.png" class="popup-image" title="Certificate">
+                            <img src="images/Certificate File/Screenshot 2025-10-01 051536.png" alt="Certificate 2" class="certificate-thumb">
+                        </a>
+                        <a href="images/Certificate File/Screenshot 2025-09-30 124918.png" class="popup-image" title="Certificate">
+                            <img src="images/Certificate File/Screenshot 2025-09-30 124918.png" alt="Certificate 3" class="certificate-thumb">
+                        </a>
+                        <a href="images/Certificate File/Screenshot 2025-09-30 124648.png" class="popup-image" title="Certificate">
+                            <img src="images/Certificate File/Screenshot 2025-09-30 124648.png" alt="Certificate 4" class="certificate-thumb">
+                        </a>
+                        <a href="images/Certificate File/Screenshot 2025-09-30 124600.png" class="popup-image" title="Certificate">
+                            <img src="images/Certificate File/Screenshot 2025-09-30 124600.png" alt="Certificate 5" class="certificate-thumb">
+                        </a>
+                        <a href="images/Certificate File/Screenshot 2025-09-30 124518.png" class="popup-image" title="Certificate">
+                            <img src="images/Certificate File/Screenshot 2025-09-30 124518.png" alt="Certificate 6" class="certificate-thumb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="section_4" class="projects section-padding" style="background: var(--section-bg-color);">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Featured Projects</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="projects-thumb">
+                        <h5 class="projects-title">
+                            <span class="projects-tag">Web Application</span>
+                            E-commerce Platform
+                        </h5>
+                        <a href="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="popup-image">
+                            <img src="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="projects-image" alt="E-commerce Platform">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="projects-thumb">
+                        <h5 class="projects-title">
+                            <span class="projects-tag">Dashboard</span>
+                            Analytics Platform
+                        </h5>
+                        <a href="images/projects/the-5th-lQYR7N67dhM-unsplash.jpg" class="popup-image">
+                            <img src="images/projects/the-5th-lQYR7N67dhM-unsplash.jpg" class="projects-image" alt="Analytics Platform">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="projects-thumb">
+                        <h5 class="projects-title">
+                            <span class="projects-tag">Portfolio</span>
+                            Brand Identity
+                        </h5>
+                        <a href="images/projects/Carousel-1.jpg.jpg" class="popup-image">
+                            <img src="images/projects/Carousel-1.jpg.jpg" class="projects-image" alt="Brand Identity">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="section_5" class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12 text-center mb-5">
+                    <h2>Get In Touch</h2>
+                </div>
+                
+                <div class="col-lg-6 col-12 mb-5 mb-lg-3">
+                    <div class="contact-info contact-info-border-start">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <div class="mb-3">
+                            <strong><i class="bi bi-geo-alt me-2"></i>Address:</strong>
+                            <p>Freetown, Sierra Leone</p>
+                        </div>
+                        <div class="mb-3">
+                            <strong><i class="bi bi-envelope me-2"></i>Email:</strong>
+                            <p>medvonjoson@gmail.com</p>
+                        </div>
+                        <div class="mb-3">
+                            <strong><i class="bi bi-phone me-2"></i>Phone:</strong>
+                            <p>+232 78 091 467</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="site-footer-title">Social Media</h5>
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link" title="LinkedIn">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link" title="GitHub">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link" title="Twitter">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#section_3" class="custom-btn custom-link">View Services</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-12">
+                    <div class="contact-form-card">
+                        <h3 class="contact-form-title mb-4"><i class="bi bi-envelope me-2"></i>Send Us A Message</h3>
+                        <button class="custom-btn w-100" style="padding: 20px; font-size: 18px;" data-bs-toggle="modal" data-bs-target="#contactFormModal">
+                            <i class="bi bi-envelope me-2"></i>Open Contact Form
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12 text-center">
+                    <h5 class="site-footer-title mb-4">Med Vonjoson</h5>
+                    <p class="copyright-text-wrap copyright-text">Copyright © 2024 <a href="#">Med Vonjoson</a></p>
+                    <p class="copyright-text-wrap">All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SERVICE MODAL 1: Web Development -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-globe me-2"></i>Web Development Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 style="color: var(--secondary-color);"><i class="bi bi-check-circle me-2"></i>What We Offer:</h6>
+                    <ul>
+                        <li>Custom Website Development</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Responsive Web Design</li>
+                        <li>Content Management Systems</li>
+                        <li>Web Applications</li>
+                        <li>API Development</li>
+                    </ul>
+                    <h6 style="color: var(--secondary-color);"><i class="bi bi-code-slash me-2"></i>Technologies We Use:</h6>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>React.js, Vue.js, Angular</li>
+                        <li>Node.js, Express.js</li>
+                        <li>PHP, Python, Java</li>
+                        <li>MySQL, MongoDB</li>
+                        <li>Bootstrap, Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactFormModal" data-bs-dismiss="modal">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE MODAL 2: App Development -->
+    <div class="modal fade" id="serviceModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-phone me-2"></i>App Development Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 style="color: var(--secondary-color);"><i class="bi bi-check-circle me-2"></i>What We Offer:</h6>
+                    <ul>
+                        <li>Mobile App Development (iOS & Android)</li>
+                        <li>Cross-platform Applications</li>
+                        <li>Progressive Web Apps</li>
+                        <li>Desktop Applications</li>
+                    </ul>
+                    <h6 style="color: var(--secondary-color);"><i class="bi bi-code-slash me-2"></i>Technologies We Use:</h6>
+                    <ul>
+                        <li>React Native, Flutter</li>
+                        <li>Swift, Kotlin</li>
+                        <li>JavaScript, TypeScript</li>
+                        <li>Electron</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactFormModal" data-bs-dismiss="modal">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE MODAL 3: Dissertation Writing -->
+    <div class="modal fade" id="serviceModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-book me-2"></i>Dissertation Writing Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 style="color: var(--secondary-color);"><i class="bi bi-check-circle me-2"></i>What We Offer:</h6>
+                    <ul>
+                        <li>Complete Dissertation Writing</li>
+                        <li>Research & Analysis</li>
+                        <li>Literature Review</li>
+                        <li>Editing & Proofreading</li>
+                        <li>Academic Formatting</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactFormModal" data-bs-dismiss="modal">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE MODAL 4: Data Analysis -->
+    <div class="modal fade" id="serviceModal4" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-bar-chart me-2"></i>Data Analysis Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 style="color: var(--secondary-color);"><i class="bi bi-check-circle me-2"></i>What We Offer:</h6>
+                    <ul>
+                        <li>Data Collection & Processing</li>
+                        <li>Statistical Analysis</li>
+                        <li>Data Visualization</li>
+                        <li>Business Intelligence</li>
+                        <li>Predictive Modeling</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactFormModal" data-bs-dismiss="modal">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM MODAL -->
+    <div class="modal fade" id="contactFormModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-envelope me-2"></i>Get In Touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 2px; background: var(--primary-color); width: 100%; margin-bottom: 20px;"></div>
+                    <form id="contactPopupForm" class="contact-form-popup">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="popupName" placeholder="Your Name" required>
+                                    <label for="popupName">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="popupEmail" placeholder="Your Email" required>
+                                    <label for="popupEmail">Your Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" id="popupPhone" placeholder="Phone Number">
+                                    <label for="popupPhone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="popupService" style="color: var(--primary-color); font-weight: bold; margin-bottom: 8px; display: block;">Service Needed <span style="color: red;">*</span></label>
+                                <select class="form-select form-control" id="popupService" required style="height: 58px;">
+                                    <option value="">Select Service</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="app-development">App Development</option>
+                                    <option value="ai-development">AI Development</option>
+                                    <option value="data-analysis">Data Analysis</option>
+                                    <option value="project-management">Project Management</option>
+                                    <option value="digital-marketing">Digital Marketing</option>
+                                    <option value="web-design">Web Design</option>
+                                    <option value="graphic-design">Graphic Design</option>
+                                    <option value="ui-ux-design">UI/UX Design</option>
+                                    <option value="media-production">Media Production</option>
+                                    <option value="branding">Branding</option>
+                                    <option value="dissertation-writing">Dissertation Writing</option>
+                                    <option value="ecommerce">Ecommerce</option>
+                                    <option value="seo">SEO</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="popupMessage" placeholder="Project Details" style="height: 120px" required></textarea>
+                            <label for="popupMessage">Project Details</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="popupBudget">
+                            <label class="form-check-label" for="popupBudget">
+                                I have a specific budget range
+                            </label>
+                        </div>
+                        <div class="form-floating mb-3 budget-range-hidden" id="budgetRange">
+                            <select class="form-select form-control" id="popupBudgetRange">
+                                <option value="">Select Budget Range</option>
+                                <option value="under-1000">Under Nle1,000</option>
+                                <option value="1000-2500">Nle1,000 - Nle2,500</option>
+                                <option value="2500-5000">Nle2,500 - Nle5,000</option>
+                                <option value="5000-10000">Nle5,000 - Nle10,000</option>
+                                <option value="over-10000">Over Nle10,000</option>
+                            </select>
+                            <label for="popupBudgetRange">Budget Range</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div style="height: 2px; background: var(--primary-color); width: 100%; margin-bottom: 15px;"></div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitContactForm">
+                        <i class="bi bi-send me-2"></i>SEND MESSAGE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLATFO.MED CHAT COMPONENT -->
+    <div class="platfo-chat-container">
+        <button id="platfoChatToggle" class="platfo-chat-toggle" style="background: var(--primary-color);">
+            <i class="bi bi-chat-dots"></i>
+            <span class="platfo-chat-label">Platfo.med</span>
+        </button>
+        <div id="platfoChatBox" class="platfo-chat-box">
+            <div class="platfo-chat-header">
+                <div class="platfo-chat-title">
+                    <i class="bi bi-robot"></i>
+                    Platfo.med Assistant
+                </div>
+                <button id="platfoChatClose" class="platfo-chat-close">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+            <div id="platfoChatMessages" class="platfo-chat-messages">
+                <div class="platfo-message platfo-bot-message">
+                    <div class="platfo-message-content">
+                        <p>Hello! 👋 I'm Platfo.med, your AI assistant for web development and portfolio building.</p>
+                        <p>I can help you with:</p>
+                        <ul>
+                            <li>Web technologies (HTML, CSS, JavaScript)</li>
+                            <li>Portfolio creation strategies</li>
+                            <li>Med Vonjoson's services</li>
+                            <li>Learning resources and tutorials</li>
+                        </ul>
+                        <p>What would you like to know about web development?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="platfo-chat-input-container">
+                <div class="platfo-chat-input-wrapper">
+                    <input type="text" id="platfoChatInput" class="platfo-chat-input" placeholder="Ask me anything about web development...">
+                    <button id="platfoChatSend" class="platfo-chat-send">
+                        <i class="bi bi-send"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    
+    <!-- Sticky Menu -->
+    <script src="js/jquery.sticky.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/flow-animation.js"></script>
+    <script src="js/download-resume.js"></script>
+    <script src="js/platfo-chat.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+
+    <!-- Initialize Components -->
+    <script>
+        $(document).ready(function() {
+            // Handle active navigation
+            $('.custom-link').on('click', function(e) {
+                $('.custom-link').each(function() {
+                    $(this).removeClass('active').css('text-decoration', 'none');
+                });
+                $(this).addClass('active');
+            });
+
+            // Smooth scroll for click-scroll links
+            $('.click-scroll').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 100
+                    }, 500);
+                }
+            });
+
+            // Initialize Sticky Menu
+            $('.sticky-wrapper').sticky();
+        });
+    </script>
+
+</body>
+</html>
